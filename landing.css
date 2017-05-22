@@ -1,0 +1,24 @@
+body {
+  font-family: helvetica;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.category-button {
+  border: 3px solid pink;
+  background-color: pink;
+  flex: 1;
+  height: 100px;
+  width: 100px;
+  margin: 5px;
+}
+
+.button-wrap {
+  border: 3px solid tomato;
+  width: 90vw;
+  height: 90vw;
+}
