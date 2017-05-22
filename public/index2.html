@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Page 2</title>
+</head>
+<body>
+  <form action="">
+    <input type="text" placeholder="Input your goal here...">
+    <input type="range" min="0" max="100" value="0" step="1" onchange="showDeadline(this.value)" />
+      <span id="deadline">0</span>
+    <input type="range" min="0" max="100" value="0" step="25" onchange="showFrequency(this.value)" />
+      <span id="frequency">0</span>
+  </form>
+<script type="text/javascript">
+function showDeadline(newValue) {
+  document.getElementById("deadline").innerHTML=newValue;
+}
+function showFrequency(newValue) {
+document.getElementById("frequency").innerHTML=newValue;
+}
+</script>
+</body>
+</html>
