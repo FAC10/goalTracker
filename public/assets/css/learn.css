@@ -3,11 +3,17 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 body {
-  /*padding: 1rem 0;*/
+  /*display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;*/
 }
+
 h1 {
   font-size: 2.5rem;
   font-weight: 500;
+  text-align: center;
+  padding-top: 3rem;
 }
 h2 {
   font-size: 2rem;
@@ -36,6 +42,10 @@ time {
 .goal-list ul {
   background-color: #3949AB;
 }
+.goal-list.learn {
+  width: 90vw;
+  margin: 0 auto;
+  }
 .goal-list li {
   position: relative;
   display: flex;
@@ -43,7 +53,7 @@ time {
   background-color: #3949AB;
   padding: 2rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.16);
-  min-height: 7rem;
+  min-height: 8rem;
   justify-content: center;
   flex-direction: column;
   box-sizing: border-box;
@@ -63,8 +73,8 @@ time {
 }
 .goal-list time {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 0.5rem;
+  right: 0.5rem;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.67);
   font-size: 1.5rem;
@@ -73,7 +83,7 @@ time {
 .add-goal {
   position: absolute;
   top: 10rem;
-  left: 2rem;
+  left: calc(2rem + 5vw);
   transform: translateY(-50%);
 
   border-radius: 50%;
