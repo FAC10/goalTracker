@@ -1,0 +1,208 @@
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Goals List</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style>
+      /* CSS RESET */
+      /* http://meyerweb.com/eric/tools/css/reset/
+         v2.0 | 20110126
+         License: none (public domain)
+      */
+
+      html, body, div, span, applet, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, img, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, embed,
+      figure, figcaption, footer, header, hgroup,
+      menu, nav, output, ruby, section, summary,
+      time, mark, audio, video {
+      	margin: 0;
+      	padding: 0;
+      	border: 0;
+      	font-size: 100%;
+      	font: inherit;
+      	vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article, aside, details, figcaption, figure,
+      footer, header, hgroup, menu, nav, section {
+      	display: block;
+      }
+      body {
+      	line-height: 1;
+      }
+      ol, ul {
+      	list-style: none;
+      }
+      blockquote, q {
+      	quotes: none;
+      }
+      blockquote:before, blockquote:after,
+      q:before, q:after {
+      	content: '';
+      	content: none;
+      }
+      table {
+      	border-collapse: collapse;
+      	border-spacing: 0;
+      }
+      /* END CSS RESET */
+
+      html {
+        font-size: 8px;
+        font-family: 'Roboto', sans-serif;
+      }
+      body {
+        /*padding: 1rem 0;*/
+      }
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 500;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      time {
+        font-size: 2rem;
+      }
+
+      .goal-header {
+        position: relative;
+        height: 10rem;
+        box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.24);
+      }
+
+      .container {
+        margin: 0 2rem;
+      }
+      .goal-list .goal-category-icon {
+        height: 100%;
+        width: 9rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.25);
+      }
+      .goal-list ul {
+        background-color: #3949AB;
+      }
+      .goal-list li {
+        position: relative;
+        display: flex;
+        color: white;
+        background-color: #3949AB;
+        padding: 2rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+        min-height: 7rem;
+        justify-content: center;
+        flex-direction: column;
+        box-sizing: border-box;
+      }
+      .goal-list li:first-child {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        min-height: calc(7rem - 4rem);
+        box-sizing: content-box;
+      }
+
+
+      .goal-list h2 {
+        display: inline-block;
+        width: calc(100vw - 21rem);
+        padding-left: 9rem;
+      }
+      .goal-list time {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.67);
+        font-size: 1.5rem;
+      }
+
+      .add-goal {
+        position: absolute;
+        top: 10rem;
+        left: 2rem;
+        transform: translateY(-50%);
+
+        border-radius: 50%;
+        font-size: 24px;
+        height: 5rem;
+        margin: auto;
+        /*min-width: 56px;*/
+        width: 5rem;
+        border: 0;
+        padding: 0;
+        overflow: hidden;
+        background: #00acc1;
+        box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.24);
+        line-height: normal;
+      }
+
+      /*.goal-list input[type="checkbox"] {
+        height: 3rem;
+        width: 3rem;
+      }*/
+
+      /* COLOURS */
+      .work li, ul > li.work { background-color: #F4511E; }
+      .health li, ul > li.health { background-color: #43A047; }
+      .learn li, ul > li.learn { background-color: #3949AB; }
+      .leisure li, ul > li.leisure { background-color: #5E35B1; }
+    </style>
+  </head>
+  <body>
+    <header class="goal-header">
+      <div class="container">
+        <h1>Health Goals</h1>
+      </div>
+    </header>
+    <ul class="goal-list learn">
+      <li class="">
+        <div class="container">
+          <div class="goal-category-icon">
+          </div>
+          <h2>Learn NodeJS</h2>
+          <time>Sat, 20 May</time>
+        </div>
+      </li>
+      <li class="">
+        <div class="container">
+          <div class="goal-category-icon">
+          </div>
+          <h2>Learn French</h2>
+          <time>Sat, 20 May</time>
+        </div>
+      </li>
+      <li>
+        <div class="container">
+          <div class="goal-category-icon">
+          </div>
+          <h2>Study how HTTP works</h2>
+          <time>Sat, 20 May</time>
+        </div>
+      </li>
+      <li class="">
+        <div class="container">
+          <div class="goal-category-icon">
+          </div>
+          <h2>Health</h2>
+          <time>Sat, 20 May</time>
+        </div>
+      </li>
+    </ul>
+    <button class="add-goal" type="button" name="button"><i class="material-icons">add</i></button>
+  </body>
+</html>
