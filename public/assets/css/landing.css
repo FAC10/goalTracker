@@ -39,6 +39,7 @@ body {
 }
 
 .category-button {
+  border: none;
   font: 18px helvetica;
   flex: 1;
   height: 40vw;
