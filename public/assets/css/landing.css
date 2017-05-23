@@ -1,0 +1,77 @@
+/*- - RESET - - */
+
+body {
+  font-family: helvetica, sans-serif;
+  }
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex .row {
+  flex-direction: row;
+}
+
+.flex-list {
+  justify-content: flex-start;
+}
+
+.shadow {
+  border: 3px solid #ccc;
+  box-shadow: 1px 1px 5px 1px #ccc;
+}
+
+
+/*- - BUTTONS - - */
+
+.button-wrap {
+  width: 90vw;
+  max-height: 60vh;
+  height: 90vw;
+}
+
+.button-row {
+  width: 100%;
+  height: 50%;
+}
+
+.category-button {
+  font: 18px helvetica;
+  flex: 1;
+  height: 40vw;
+  max-height: 175px;
+  width: 40vw;
+  max-width: 175px;
+  margin: 2vw;
+}
+
+/*- - GOALS LIST - - */
+
+.goals-list {
+  position: fixed;
+  overflow: hidden;
+  background-color: grey;
+  width: 90vw;
+  height: 93vh;
+  bottom: 20px;
+  left: calc((5vw) - 3px);
+  max-height: 17vh;
+  margin-top: 7vh;
+  transition: max-height 0.5s;
+}
+
+.goals-header {
+
+}
+
+
+.goals-list.expanded {
+  max-height: 93vh;
+}
+
+.expand-click {
+  cursor: pointer;
+}
