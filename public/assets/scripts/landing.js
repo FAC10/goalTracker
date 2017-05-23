@@ -1,6 +1,5 @@
 (function(){
 
-
   // add 'expanded' class to goals list on click
   var expandButton = document.getElementById('expandClick');
 
