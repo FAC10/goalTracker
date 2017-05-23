@@ -9,13 +9,31 @@
 </head>
 <body class="flex">
   <header>
-    <h1>Which category of goal?</h1>
+    <h1>Home</h1>
   </header>
-  <div class="button-wrap flex">
-    <button class="category-button" id="work">Work</button>
-    <button class="category-button" id="health">Health</button>
-    <button class="category-button" id="learn">Learning</button>
-    <button class="category-button" id="leisure">Leisure</button>
+  <div class="button-wrap shadow flex">
+    <div class="flex row button-row">
+      <a href="work.html">
+        <button class="category-button" id="work">Work</button>
+      </a>
+      <a href="health.html">
+        <button class="category-button" id="health">Health</button>
+      </a>
+    </div>
+    <div class="flex row button-row">
+      <a href="learn.html">
+        <button class="category-button" id="learn">Learning</button>
+      </a>
+      <a href="leisure.html">
+        <button class="category-button" id="leisure">Leisure</button>
+      </a>
+    </div>
   </div>
+  <div class="goals-list-wrap shadow flex" id="goalsList">
+    <!-- <div class="goals-list flex"> -->
+      <h2 id="expandClick">See Your Goals</h2>
+    <!-- </div> -->
+  </div>
+  <script type="text/javascript" src="landing.js"></script>
 </body>
 </html>

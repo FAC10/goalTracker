@@ -1,6 +1,8 @@
+/*- - RESET - - */
+
 body {
   font-family: helvetica;
-}
+  }
 
 .flex {
   display: flex;
@@ -8,17 +10,55 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.shadow {
+  border: 3px solid #ccc;
+  box-shadow: 1px 1px 5px 1px #ccc;
+}
+
+.flex .row {
+  flex-direction: row;
+}
+
+/*- - BUTTONS - - */
+
+.button-row {
+  width: 100%;
+  height: 50%;
+}
+
 .category-button {
-  border: 3px solid pink;
-  background-color: pink;
+  font: 18px helvetica;
   flex: 1;
-  height: 100px;
-  width: 100px;
-  margin: 5px;
+  height: 40vw;
+  max-height: 175px;
+  width: 40vw;
+  max-width: 175px;
+  margin: 2vw;
 }
 
 .button-wrap {
-  border: 3px solid tomato;
   width: 90vw;
+  max-height: 60vh;
   height: 90vw;
+  /*max-width: 410px;*/
+}
+
+/*- - GOALS LIST - - */
+
+.goals-list-wrap {
+  position: fixed;
+  overflow: hidden;
+  background-color: grey;
+  width: 90vw;
+  height: 17vh;
+  bottom: 20px;
+  left: calc((5vw) - 3px);
+  max-height: 17vh;
+  margin-top: 7vh;
+}
+
+.goals-list {
+  /*height: 90vh;*/
+  /*position: absolute;*/
 }
