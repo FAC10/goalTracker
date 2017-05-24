@@ -13,10 +13,6 @@ const addToDate = (n) => {
   day = ('0' + newDate.getDate()).slice(-2);
   month = ('0' + (newDate.getMonth() + 1)).slice(-2);
   year = newDate.getFullYear();
-	console.log(newDate);
-	console.log(day);
-	console.log(month);
-	console.log(year);
   document.getElementById("date").value=`${year}-${month}-${day}`;
 }
 
