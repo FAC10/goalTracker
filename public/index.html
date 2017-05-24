@@ -7,33 +7,35 @@
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/list.css">
   <link rel="stylesheet" href="./assets/css/landing.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Goal Tracker Home</title>
 </head>
 <body class="flex">
-  <header>
-    <h1>Home</h1>
+  <header class="goal-header">
+    <h1>Test Home</h1>
   </header>
   <div class="button-wrap shadow flex">
     <div class="flex row button-row">
       <a href="work.html">
-        <button class="category-button work-color" id="work">Work</button>
+        <button class="category-button work-color pointer" id="work">Work</button>
       </a>
       <a href="health.html">
-        <button class="category-button health-color" id="health">Health</button>
+        <button class="category-button health-color pointer" id="health">Health</button>
       </a>
     </div>
     <div class="flex row button-row">
       <a href="learn.html">
-        <button class="category-button learn-color" id="learn">Learning</button>
+        <button class="category-button learn-color pointer" id="learn">Learning</button>
       </a>
       <a href="leisure.html">
-        <button class="category-button leisure-color" id="leisure">Leisure</button>
+        <button class="category-button leisure-color pointer" id="leisure">Leisure</button>
       </a>
     </div>
   </div>
+
   <div class="goals-list shadow flex flex-list" id="goalsList">
-        <h2 id="expandClick" class="goals-header expand-click">See Your Goals</h2>
-        <ul class="goal-list learn">
+        <h2 id="expandClick" class="goals-header expand-click pointer">See Your Goals</h2>
+        <ul class="home-goals goal-list learn" id="expandClick">
           <li class="work">
             <div class="container">
               <div class="goal-category-icon">
