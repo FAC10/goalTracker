@@ -28,6 +28,7 @@ body {
 /*- - BUTTONS - - */
 
 .button-wrap {
+  margin-top: 3rem;
   width: 90vw;
   max-height: 60vh;
   height: 90vw;
@@ -63,14 +64,12 @@ body {
   margin-top: 7vh;
   transition: max-height 0.5s;
 }
-
-.goals-header {
-
+.goal-list time {
+  right: 4rem;
+  /*display: none;*/
 }
-
-
 .goals-list.expanded {
-  max-height: 93vh;
+  max-height: 78vh;
 }
 
 .expand-click {

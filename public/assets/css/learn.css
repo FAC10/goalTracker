@@ -101,7 +101,6 @@ time {
 .goal-list time {
   position: absolute;
   top: 0.5rem;
-  /*right: 4rem;*/
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.67);
   font-size: 1.5rem;
