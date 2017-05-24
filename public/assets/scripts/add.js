@@ -7,26 +7,31 @@ let year = date.getFullYear();
 document.getElementById("date").value=`${year}-${month}-${day}`;
 
 const addToDate = (n) => {
-  n=parseInt(document.getElementById("slider1").value) * 24 * 60 * 60 * 1000;
-  console.log(n);
+  // let value = document.querySelector('.slider-knob-inner').value;
+  let value = n.detail.value;
+  console.log(value);
+  value=parseInt(value) * 24 * 60 * 60 * 1000;
+  console.log(value);
   let msDate = date.getTime();
-  const newDate = new Date(msDate+n);
+  const newDate = new Date(msDate+value);
   day = ('0' + newDate.getDate()).slice(-2);
   month = ('0' + (newDate.getMonth() + 1)).slice(-2);
   year = newDate.getFullYear();
   document.getElementById("date").value=`${year}-${month}-${day}`;
 }
 
-document.getElementById("slider1").addEventListener('input', addToDate);
+document.getElementById("slider1").addEventListener('immediate-value-change', addToDate);
 
 const setFreq = (n) => {
-  n=parseInt(document.getElementById("slider2").value);
-  console.log(n);
-  switch (n) {
+  let value = n.detail.value;
+  value=parseInt(value);
+  console.log(value);
+  switch (value) {
     case 0:
       document.getElementById("frequency").innerHTML='&nbsp;';
       break;
     case 25:
+    console.log('hi');
       document.getElementById("frequency").innerHTML='Every Day';
       break;
     case 50:
@@ -42,4 +47,4 @@ const setFreq = (n) => {
     }
 }
 
-document.getElementById("slider2").addEventListener('input', setFreq);
+document.getElementById("slider2").addEventListener('immediate-value-change', setFreq);
