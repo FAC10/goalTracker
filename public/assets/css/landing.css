@@ -76,13 +76,17 @@ body {
   right: 4rem;
   /*display: none;*/
 }
+
 .goals-list.expanded {
   max-height: 78vh;
   overflow: scroll;
 }
 
-.expand-click {
+.pointer {
   cursor: pointer;
+}
+
+.expand-click {
   width: 100%;
   text-align:center;
 }
