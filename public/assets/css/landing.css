@@ -51,8 +51,8 @@ body {
 }
 
 /*- - GOALS LIST - - */
-.home-goals {
-  /*margin-top: 8rem;*/
+.home-goals.goal-list.learn {
+  top: 0;
 }
 
 .goals-header.expand-click {

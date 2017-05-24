@@ -28,6 +28,7 @@ time {
   height: 10rem;
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.24);
   width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
 }
 
 .container {
@@ -51,6 +52,7 @@ time {
   background: #00acc1;
   box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.24);
   line-height: normal;
+  z-index: 1;
 }
 
 .goal-list .goal-category-icon {
@@ -69,7 +71,9 @@ time {
 .goal-list {
   width: 100%;
   margin: 0 auto;
-  }
+  position: relative;
+  top: -5rem;
+}
 
 .goal-list li {
   position: relative;
@@ -85,7 +89,7 @@ time {
 }
 
 .goal-list li:first-child {
-  padding-top: 4rem;
+  padding-top: 3rem;
   padding-bottom: 2rem;
   min-height: calc(7rem - 4rem);
   box-sizing: content-box;
@@ -101,9 +105,10 @@ time {
 .goal-list time {
   position: absolute;
   top: 0.5rem;
+  right: 2rem;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.67);
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 

@@ -1,0 +1,20 @@
+{
+  "name": "goal-tracker",
+  "version": "1.0.0",
+  "description": "Goals: Help people to plan their goals bot in the long term and in the short term. Goals and tasks will be divided in categories: * Work/life balance * Learning * Productivity * Health Each category will have several subcategories, such as:",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FAC10/goalTracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FAC10/goalTracker/issues"
+  },
+  "homepage": "https://github.com/FAC10/goalTracker#readme"
+}
