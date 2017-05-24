@@ -7,7 +7,6 @@ let year = date.getFullYear();
 document.getElementById("date").value=`${year}-${month}-${day}`;
 
 const addToDate = (n) => {
-  // let value = document.querySelector('.slider-knob-inner').value;
   let value = n.detail.value;
   console.log(value);
   value=parseInt(value) * 24 * 60 * 60 * 1000;
@@ -41,7 +40,7 @@ const setFreq = (n) => {
       document.getElementById("frequency").innerHTML='Every Month';
       break;
     case 100:
-      document.getElementById("frequency").innerHTML='At the end';
+      document.getElementById("frequency").innerHTML='On Deadline';
       break;
     default: 0;
     }
