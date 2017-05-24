@@ -44,9 +44,9 @@ body {
   font: 18px helvetica;
   flex: 1;
   height: 40vw;
-  max-height: 175px;
+  max-height: 150px;
   width: 40vw;
-  max-width: 175px;
+  max-width: 150px;
   margin: 2vw;
 }
 
@@ -83,4 +83,6 @@ body {
 
 .expand-click {
   cursor: pointer;
+  width: 100%;
+  text-align:center;
 }
