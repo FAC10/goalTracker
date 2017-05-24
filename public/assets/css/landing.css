@@ -40,6 +40,7 @@ body {
 }
 
 .category-button {
+  color: white;
   border: none;
   font: 18px helvetica;
   flex: 1;
