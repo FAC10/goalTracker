@@ -51,16 +51,24 @@ body {
 }
 
 /*- - GOALS LIST - - */
+.home-goals {
+  /*margin-top: 8rem;*/
+}
+
+.goals-header.expand-click {
+  margin: 3rem 0 3rem 0;
+  font-size: 2.5rem;
+}
 
 .goals-list {
   position: fixed;
   overflow: hidden;
-  background-color: grey;
+  background-color: #fdfd96;
   width: 90vw;
   height: 93vh;
   bottom: 20px;
   left: calc((5vw) - 3px);
-  max-height: 17vh;
+  max-height: 8rem;
   margin-top: 7vh;
   transition: max-height 0.5s;
 }
@@ -70,6 +78,7 @@ body {
 }
 .goals-list.expanded {
   max-height: 78vh;
+  overflow: scroll;
 }
 
 .expand-click {
