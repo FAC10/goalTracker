@@ -1,10 +1,11 @@
-
-const date = new Date();
+//First slider - Set the date
+let date = new Date();
 let day = ('0' + date.getDate()).slice(-2);
 let month = ('0' + (date.getMonth() + 1)).slice(-2);
 let year = date.getFullYear();
 
-document.getElementById("date").value=`${year}-${month}-${day}`;
+const dateElem = document.getElementById("date");
+dateElem.value ? date = new Date(dateElem.value) : dateElem.value=`${year}-${month}-${day}`;
 
 const addToDate = (n) => {
   let value = n.detail.value;
@@ -21,29 +22,22 @@ const addToDate = (n) => {
 
 document.getElementById("slider1").addEventListener('immediate-value-change', addToDate);
 
+// Second slider - Frequency of remainders
+const freqElem = document.getElementById("frequency");
+const freqSlider = document.getElementById("slider2");
+
+const freq = { 0:'Never',
+              25:'Every Day',
+              50:'Every Week',
+              75:'Every Month',
+             100:'On Deadline'};
+
+freqElem.innerHTML = freq[freqSlider.value];
+
 const setFreq = (n) => {
-  let value = n.detail.value;
-  value=parseInt(value);
-  console.log(value);
-  switch (value) {
-    case 0:
-      document.getElementById("frequency").innerHTML='&nbsp;';
-      break;
-    case 25:
-    console.log('hi');
-      document.getElementById("frequency").innerHTML='Every Day';
-      break;
-    case 50:
-      document.getElementById("frequency").innerHTML='Every Week';
-      break;
-    case 75:
-      document.getElementById("frequency").innerHTML='Every Month';
-      break;
-    case 100:
-      document.getElementById("frequency").innerHTML='On Deadline';
-      break;
-    default: 0;
-    }
+  let value = parseInt(n.detail.value);
+  freqSlider.value = value;
+  freqElem.innerHTML = freq[freqSlider.value];
 }
 
-document.getElementById("slider2").addEventListener('immediate-value-change', setFreq);
+freqSlider.addEventListener('immediate-value-change', setFreq);
