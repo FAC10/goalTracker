@@ -51,6 +51,10 @@ body {
   margin: 2vw;
 }
 
+.button-icon {
+  max-height: 50%;
+}
+
 /*- - GOALS LIST - - */
 .home-goals.goal-list.learn {
   top: 0;
