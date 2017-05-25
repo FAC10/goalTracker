@@ -55,8 +55,9 @@ i.material-icons.counter-logo {
 	font-size: 10rem;
 }
 .counter {
+	color: #fafafa;
 	position: absolute;
-	top: 4rem;
-	right: 3.4rem;
-	font-size: 18px;
+  top: 4.2rem;
+  right: 4.2rem;
+  font-size: 20px;
 }
