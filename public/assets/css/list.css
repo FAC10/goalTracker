@@ -116,10 +116,12 @@ a {
   font-size: 1.75rem;
 }
 
-
+/*
+["#ffffd9","#edf8b1","#c7e9b4","#7fcdbb","#41b6c4","#1d91c0","#225ea8","#253494","#081d58"]
+*/
 
 /* COLOURS */
-.work li, ul > li.work, .work-color { background-color: #F4511E; }
-.health li, ul > li.health,  .health-color{ background-color: #43A047; }
-.learn li, ul > li.learn, .learn-color{ background-color: #3949AB; }
-.leisure li, ul > li.leisure, .leisure-color{ background-color: #5E35B1; }
+.work li, ul > li.work, .work-color { background-color: #225ea8; }
+.health li, ul > li.health,  .health-color{ background-color: #41b6c4; }
+.learn li, ul > li.learn, .learn-color{ background-color: #1d91c0; }
+.leisure li, ul > li.leisure, .leisure-color{ background-color: #7fcdbb; }

@@ -2,7 +2,16 @@
 
 body {
   font-family: helvetica, sans-serif;
-  }
+}
+
+canvas {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
 
 .flex {
   display: flex;
@@ -20,8 +29,8 @@ body {
 }
 
 .shadow {
-  border: 3px solid #ccc;
-  box-shadow: 1px 1px 5px 1px #ccc;
+  /*border: 3px solid #ccc;
+  box-shadow: 1px 1px 5px 1px #ccc;*/
 }
 
 
@@ -40,7 +49,8 @@ body {
 }
 
 .category-button {
-  color: white;
+  background-color: rgba(255,255,255,0.5);
+  color: #253494;
   border: none;
   font: 18px helvetica;
   flex: 1;
@@ -53,13 +63,18 @@ body {
 
 .button-icon {
   max-height: 50%;
+  color: #081d58;
 }
 
 /*- - GOALS LIST - - */
 .home-goals.goal-list.learn {
   top: 0;
 }
-
+.goals-header-wrap {
+  width: 100%;
+  background-color: #253494;
+  color: white;
+}
 .goals-header.expand-click {
   margin: 3rem 0 3rem 0;
   font-size: 2.5rem;
@@ -68,7 +83,7 @@ body {
 .goals-list {
   position: fixed;
   overflow: hidden;
-  background-color: #fdfd96;
+  background-color: rgba(255,255,255,0.5);
   width: 90vw;
   height: 93vh;
   bottom: 20px;

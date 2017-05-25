@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/list.css">
   <link rel="stylesheet" href="./assets/css/landing.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet”>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Goal Tracker Home</title>
 </head>
@@ -46,7 +47,10 @@
   </div>
 
   <div class="goals-list shadow flex flex-list" id="goalsList">
-        <h2 id="expandClick" class="goals-header expand-click pointer">See Your Goals</h2>
+    <div class="goals-header-wrap">
+      <h2 id="expandClick" class="goals-header expand-click pointer">See Your Goals
+      </h2>
+    </div>
         <ul class="home-goals goal-list learn" id="expandClick">
           <li class="work">
             <div class="container">
@@ -84,5 +88,16 @@
 
   </div>
   <script type="text/javascript" src="assets/scripts/landing.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
+<script>
+    var pattern = Trianglify({
+        width: window.innerWidth,
+        height: window.innerHeight,
+        x_colors: ["#ffffd9","#edf8b1","#c7e9b4","#7fcdbb","#41b6c4","#1d91c0","#225ea8","#253494","#081d58"]
+    });
+    document.body.appendChild(pattern.canvas())
+    // console.log(pattern.canvas())
+</script>
 </body>
 </html>
