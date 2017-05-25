@@ -28,6 +28,7 @@ body {
 /*- - BUTTONS - - */
 
 .button-wrap {
+  margin-top: 3rem;
   width: 90vw;
   max-height: 60vh;
   height: 90vw;
@@ -39,40 +40,54 @@ body {
 }
 
 .category-button {
+  color: white;
   border: none;
   font: 18px helvetica;
   flex: 1;
   height: 40vw;
-  max-height: 175px;
+  max-height: 150px;
   width: 40vw;
-  max-width: 175px;
+  max-width: 150px;
   margin: 2vw;
 }
 
 /*- - GOALS LIST - - */
+.home-goals.goal-list.learn {
+  top: 0;
+}
+
+.goals-header.expand-click {
+  margin: 3rem 0 3rem 0;
+  font-size: 2.5rem;
+}
 
 .goals-list {
   position: fixed;
   overflow: hidden;
-  background-color: grey;
+  background-color: #fdfd96;
   width: 90vw;
   height: 93vh;
   bottom: 20px;
   left: calc((5vw) - 3px);
-  max-height: 17vh;
+  max-height: 8rem;
   margin-top: 7vh;
   transition: max-height 0.5s;
 }
-
-.goals-header {
-
+.goal-list time {
+  right: 4rem;
+  /*display: none;*/
 }
 
-
 .goals-list.expanded {
-  max-height: 93vh;
+  max-height: 78vh;
+  overflow: scroll;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .expand-click {
-  cursor: pointer;
+  width: 100%;
+  text-align:center;
 }

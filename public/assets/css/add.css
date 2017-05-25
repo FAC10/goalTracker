@@ -1,48 +1,104 @@
-header {
-  background-color: #000;
-  color: #fff;
+html {
+  font-size: 8px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
   text-align: center;
+  padding-top: 3rem;
+
 }
 
-div {
-display: flex;
-align-items: center;
+h2 {
+  font-size: 2rem;
 }
 
-input, button {
-  position:relative;
-  margin: 2.5rem auto;
-  display: block;
+time {
+  font-size: 2rem;
+}
+
+label {
+  font-size: 1.75rem;
+  padding: 1rem;
+}
+
+.goal-header {
+  background-color: #F4511E;
+  color: #fff;
+  position: relative;
+  height: 10rem;
+  /*box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.24);*/
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.container {
+  margin: 0 2rem;
+}
+
+.add-goal {
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  height: 5rem;
+  margin: 2rem auto;
+  /*min-width: 56px;*/
+  width: 5rem;
+  border: 0;
+  padding: 0;
+  background: #00acc1;
+  box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.24);
+  line-height: normal;
+}
+
+.add-goal i {
+  margin: .4rem auto;
 }
 
 input {
-  width: 100%;
+  margin: 4.5rem auto;
+  width: 95%;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7)
 }
 
-#dateField input, #freqField input  {
-  margin: .5rem auto;
+#dateField input {
+  width: 50%;
+  margin: 2.5rem auto;
   padding: .1rem;
-}
-
-#freqField {
-  display: flex;
   text-align: center;
 }
 
- #freqField input{
-  align-items: center;
+#dateField, #freqField {
+  margin: 2.5rem auto;
+  display: flex;
+  text-align: center;
+  width: calc(100vw - 32px);
 }
 
+#freqField input{
+  align-items: center;
+}
 
 span {
   text-align: center;
   margin: 0 auto;
   display: block;
+  font-size: 1.75rem;
 }
 
-button {
+/*button {
   width: 20%;
-}
+}*/
 
 #datespan:invalid+span:after {
     content: '✖';
