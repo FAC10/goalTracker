@@ -46,3 +46,17 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+i.material-icons.counter-logo {
+	position: absolute;
+	color: #253494;
+	top: 0.4rem;
+	right: 0.4rem;
+	font-size: 10rem;
+}
+.counter {
+	position: absolute;
+	top: 4rem;
+	right: 3.4rem;
+	font-size: 18px;
+}
