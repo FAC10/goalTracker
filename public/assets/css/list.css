@@ -23,6 +23,11 @@ time {
   font-size: 2rem;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .goal-header {
   position: relative;
   height: 10rem;

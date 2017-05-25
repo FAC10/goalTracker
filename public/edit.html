@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./assets/css/add.css" class="css" type="text/css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <title>Add your goal</title>
+  <title>Edit Goal</title>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.1/webcomponents-lite.js"></script>
   <link rel="import" href="https://raw-dot-custom-elements.appspot.com/PolymerElements/paper-slider/v2.0.0/paper-styles/color.html">
@@ -26,21 +26,21 @@
 <body>
   <header class="goal-header">
     <div class="container">
-      <h1>Add your goal</h1>
+      <h1>Edit your goal</h1>
     </div>
   </header>
-  <input type="text" placeholder="What is your goal?">
+  <input type="text" placeholder="What is your goal?" value=" Create a CV">
   <fieldset id="dateField">
     <!-- <div class="dateContainer"> -->
       <label for="date">Slide to set deadline or input it here</label>
-      <input type="date" id="date" name="date">
+      <input type="date" id="date" name="date" value="2017-05-19">
       <span id="datespan" class="validity"></span>
     <!-- </div> -->
     <paper-slider class="blue" id="slider1" min="0" max="180" value="0" step="1"></paper-slider>
   </fieldset>
   <fieldset id="freqField">
     <label for="slider2">Slide to set how often you'll be reminded</label>
-    <paper-slider class="blue" id="slider2" type="range" min="0" max="100" value="0" step="25"></paper-slider>
+    <paper-slider class="blue" id="slider2" type="range" min="0" max="100" value="25" step="25"></paper-slider>
       <span id="frequency">&nbsp;</span>
   </fieldset>
   <button class="add-goal" type="button" name="button">
