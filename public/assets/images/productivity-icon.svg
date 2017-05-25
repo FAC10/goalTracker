@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2691.46 96 87.494 110.399">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 13px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_58" data-name="Group 58" transform="translate(2647 -448)">
+    <path id="Path_163" data-name="Path 163" class="cls-1" d="M42.747,5.5A37.247,37.247,0,1,1,5.5,42.747,37.247,37.247,0,0,1,42.747,5.5Z" transform="translate(45.46 567.905)"/>
+    <rect id="Rectangle_43" data-name="Rectangle 43" class="cls-2" width="6.535" height="22.217" transform="translate(103.204 592.071) rotate(45)"/>
+    <circle id="Ellipse_4" data-name="Ellipse 4" class="cls-2" cx="6.535" cy="6.535" r="6.535" transform="translate(82.98 604.118)"/>
+    <rect id="Rectangle_44" data-name="Rectangle 44" class="cls-2" width="13.069" height="26.138" transform="translate(119.759 558.376) rotate(45)"/>
+    <rect id="Rectangle_45" data-name="Rectangle 45" class="cls-2" width="13.069" height="26.138" transform="translate(49 567.617) rotate(-45)"/>
+    <rect id="Rectangle_46" data-name="Rectangle 46" class="cls-2" width="35.287" height="13.069" rx="4" transform="translate(71.217 544)"/>
+    <rect id="Rectangle_47" data-name="Rectangle 47" class="cls-2" width="13.069" height="18.683" transform="translate(82.98 551.841)"/>
+  </g>
+</svg>
