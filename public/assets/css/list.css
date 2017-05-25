@@ -67,6 +67,13 @@ a {
   left: 0;
   top: 0;
   background-color: rgba(255, 255, 255, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goal-category-icon .button-icon {
+  height: 4rem;
+  width: auto;
 }
 .goal-list ul {
   background-color: #3949AB;
