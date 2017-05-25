@@ -40,7 +40,7 @@ var staticFile = (req, res) => {
         '.ttf': 'application/font-ttf',
         '.eot': 'application/vnd.ms-fontobject',
         '.otf': 'application/font-otf',
-        '.svg': 'application/image/svg+xml'
+        '.svg': 'image/svg+xml'
     };
     var contentType = mimeTypes[extension] || 'text/plain';
 
