@@ -64,4 +64,22 @@
       </li>
     </ul>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
+  <script>
+      var lastBackgroundChild;
+      var renderBackground = () => {
+        var pattern = Trianglify({
+            width: window.innerWidth,
+            height: window.innerHeight,
+            x_colors: ["#ffffd9","#edf8b1","#c7e9b4","#7fcdbb","#41b6c4","#1d91c0","#225ea8","#253494","#081d58"]
+        });
+        if (document.querySelector('canvas')) document.body.replaceChild(pattern.canvas(), document.querySelector('canvas'));
+        else document.body.appendChild(pattern.canvas());
+      }
+      renderBackground();
+      // console.log(pattern.canvas())
+
+      window.addEventListener("resize", renderBackground);
+  </script>
 </html>
