@@ -14,6 +14,7 @@ Goals are divided into four categories to encourage a healthy consideration for 
 
 
 **Inspiration**:
+
 Functionality:
 * [Evernote](https://evernote.com)
 * [Duolingo](https://www.duolingo.com) (Language learning) 
@@ -22,13 +23,13 @@ Functionality:
 * [http://www.stridesapp.com/](http://www.stridesapp.com/)
 
 **Technology**:
-Hapi.js
-Handlebars
-PostgreSQL
-Sass
-CI with Travis
-oAuth
-[Trianglify](https://github.com/qrohlf/trianglify)
+* Hapi.js
+* Handlebars
+* PostgreSQL
+* Sass
+* CI with Travis
+* oAuth
+* [Trianglify](https://github.com/qrohlf/trianglify)
 
 
 **Resources**
