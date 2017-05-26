@@ -17,16 +17,23 @@
   expandButton.addEventListener('click', addExpandedClass);
 
   // expand avatar into view on counter
-  var counterButton = document.getElementById('counterLogo');
+  Array.from(document.querySelectorAll('.counter-listen')).forEach(function(n){
+    n.addEventListener('click', addAvatarView);
+  })
+
+
 
   function addAvatarView() {
-    console.log('clicked');
-    if (!document.getElementById('avatarWrap').classList.contains('avatar-expanded')) {
-      document.getElementById('avatarWrap').classList.add('avatar-expanded');
+
+    if (!document.getElementById('avatarWrap').classList.contains('avatar-down')) {
+      document.getElementById('avatarWrap').classList.add('avatar-down');
     }
-    document.getElementById('avatarWrap').classList.remove('avatar-expanded');
+    else {
+
+      document.getElementById('avatarWrap').classList.remove('avatar-down');
+    }
   }
 
-  counterButton.addEventListener('click', addAvatarView);
+  // counterButton.addEventListener('click', addAvatarView);
 
 })()
