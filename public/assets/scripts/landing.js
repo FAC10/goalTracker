@@ -16,4 +16,17 @@
 
   expandButton.addEventListener('click', addExpandedClass);
 
+  // expand avatar into view on counter
+  var counterButton = document.getElementById('counterLogo');
+
+  function addAvatarView() {
+    console.log('clicked');
+    if (!document.getElementById('avatarWrap').classList.contains('avatar-expanded')) {
+      document.getElementById('avatarWrap').classList.add('avatar-expanded');
+    }
+    document.getElementById('avatarWrap').classList.remove('avatar-expanded');
+  }
+
+  counterButton.addEventListener('click', addAvatarView);
+
 })()

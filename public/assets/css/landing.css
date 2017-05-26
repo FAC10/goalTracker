@@ -34,12 +34,18 @@ canvas {
 }
 
 /* - - AVATAR - - */
-.avatar-wrap.avatar-expanded {
+
+.avatar-wrap {
   background-color: rgba(255,255,255,0.9);
   width: 100%;
   height: 100%;
-  top: 0;
   position: absolute;
+  transition: 0.5s;
+  top: -675px;
+}
+
+.avatar-wrap.avatar-expanded {
+  top: 0;
 }
 
 .avatar-wrap.avatar-expanded img {
