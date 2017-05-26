@@ -31,7 +31,9 @@
       <li class="">
         <div class="container">
           <div class="goal-category-icon">
-            <img class="button-icon" src="./assets/images/leisure-icon.svg" alt="work button icon">
+            <object class="button-icon" data="./assets/images/leisure-icon.svg" type="image/svg+xml">
+              Your browser doesn't support SVG
+            </object>
           </div>
           <h2>Watch film with friends</h2>
           <time>Sat, 20 May</time>
@@ -40,7 +42,9 @@
       <li class="">
         <div class="container">
           <div class="goal-category-icon">
-            <img class="button-icon" src="./assets/images/leisure-icon.svg" alt="work button icon">
+            <object class="button-icon" data="./assets/images/leisure-icon.svg" type="image/svg+xml">
+              Your browser doesn't support SVG
+            </object>
           </div>
           <h2>Organise birthday party</h2>
           <time>Thu, 2 June</time>
@@ -49,7 +53,9 @@
       <li>
         <div class="container">
           <div class="goal-category-icon">
-            <img class="button-icon" src="./assets/images/leisure-icon.svg" alt="work button icon">
+            <object class="button-icon" data="./assets/images/leisure-icon.svg" type="image/svg+xml">
+              Your browser doesn't support SVG
+            </object>
           </div>
           <h2>Finish watching TV series</h2>
           <time>Sat, 4 June</time>
@@ -58,7 +64,9 @@
       <li class="">
         <div class="container">
           <div class="goal-category-icon">
-            <img class="button-icon" src="./assets/images/leisure-icon.svg" alt="work button icon">
+            <object class="button-icon" data="./assets/images/leisure-icon.svg" type="image/svg+xml">
+              Your browser doesn't support SVG
+            </object>
           </div>
           <h2>Reply to Facebook messages</h2>
           <time>Sun, 5 June</time>
@@ -84,5 +92,16 @@
 
       window.addEventListener("resize", renderBackground);
   </script>
+  <script>
+  window.onload=function() {
+    var goalListIcons = document.querySelectorAll(".button-icon");
 
+    goalListIcons.forEach((goalListIcon) => {
+      // Get the SVG document inside the Object tag
+      var svgDoc = goalListIcon.contentDocument;
+      // Get one of the SVG items by ID;
+      svgDoc.querySelector('#Path_69').style.fill = '#578e81';
+    })
+  }
+  </script>
 </html>
