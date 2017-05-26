@@ -30,10 +30,13 @@ a {
 
 .goal-header {
   position: relative;
+  background-color: rgba(255,255,255,0.4);
+  color: #3949AB;
+  font-weight: 500;
   height: 10rem;
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.24);
   width: 100%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  /*border-bottom: 1px solid rgba(0, 0, 0, 0.7);*/
 }
 
 .container {
