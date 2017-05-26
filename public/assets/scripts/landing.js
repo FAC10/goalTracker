@@ -16,4 +16,24 @@
 
   expandButton.addEventListener('click', addExpandedClass);
 
+  // expand avatar into view on counter
+  Array.from(document.querySelectorAll('.counter-listen')).forEach(function(n){
+    n.addEventListener('click', addAvatarView);
+  })
+
+
+
+  function addAvatarView() {
+
+    if (!document.getElementById('avatarWrap').classList.contains('avatar-down')) {
+      document.getElementById('avatarWrap').classList.add('avatar-down');
+    }
+    else {
+
+      document.getElementById('avatarWrap').classList.remove('avatar-down');
+    }
+  }
+
+  // counterButton.addEventListener('click', addAvatarView);
+
 })()
