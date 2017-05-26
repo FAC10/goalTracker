@@ -14,7 +14,12 @@
   <body>
     <header class="goal-header">
       <div class="container">
+        <a class="back-button" href="./index.html">
+          <i class="material-icons">arrow_back</i>
+        </a>
         <h1>Learning Goals</h1>
+        <i class="material-icons counter-logo">star</i>
+        <p class="counter">17</p>
       </div>
     </header>
       <button class="add-goal" type="button" name="button">
@@ -26,7 +31,9 @@
       <li class="">
         <div class="container">
           <div class="goal-category-icon">
-            <img class="button-icon" src="./assets/images/learn-icon.svg" alt="work button icon">
+            <object class="button-icon" data="./assets/images/learn-icon.svg" type="image/svg+xml">
+              Your browser doesn't support SVG
+            </object>
           </div>
           <h2>Learn NodeJS</h2>
           <time>Fri, 24 May</time>
@@ -35,7 +42,9 @@
       <li class="">
         <div class="container">
           <div class="goal-category-icon">
-            <img class="button-icon" src="./assets/images/learn-icon.svg" alt="work button icon">
+            <object class="button-icon" data="./assets/images/learn-icon.svg" type="image/svg+xml">
+              Your browser doesn't support SVG
+            </object>
           </div>
           <h2>Learn French</h2>
           <time>Sat, 1 June</time>
@@ -44,7 +53,9 @@
       <li>
         <div class="container">
           <div class="goal-category-icon">
-            <img class="button-icon" src="./assets/images/learn-icon.svg" alt="work button icon">
+            <object class="button-icon" data="./assets/images/learn-icon.svg" type="image/svg+xml">
+              Your browser doesn't support SVG
+            </object>
           </div>
           <h2>Study how HTTP works</h2>
           <time>Mon, 3 June</time>
@@ -53,7 +64,9 @@
       <li class="">
         <div class="container">
           <div class="goal-category-icon">
-            <img class="button-icon" src="./assets/images/learn-icon.svg" alt="work button icon">
+            <object class="button-icon" data="./assets/images/learn-icon.svg" type="image/svg+xml">
+              Your browser doesn't support SVG
+            </object>
           </div>
           <h2>Learning something</h2>
           <time>Wed, 5 June</time>
@@ -61,4 +74,37 @@
       </li>
     </ul>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
+  <script>
+      var lastBackgroundChild;
+      var renderBackground = () => {
+        var pattern = Trianglify({
+            width: window.innerWidth,
+            height: window.innerHeight,
+            x_colors: ["#ffffd9","#edf8b1","#c7e9b4","#7fcdbb","#41b6c4","#1d91c0","#225ea8","#253494","#081d58"]
+        });
+        if (document.querySelector('canvas')) document.body.replaceChild(pattern.canvas(), document.querySelector('canvas'));
+        else document.body.appendChild(pattern.canvas());
+      }
+      renderBackground();
+      // console.log(pattern.canvas())
+
+      window.addEventListener("resize", renderBackground);
+  </script>
+  <script>
+  window.onload=function() {
+    var goalListIcons = document.querySelectorAll(".button-icon");
+
+    goalListIcons.forEach((goalListIcon) => {
+      // Get the SVG document inside the Object tag
+      var svgDoc = goalListIcon.contentDocument;
+      console.log(svgDoc);
+      // Get one of the SVG items by ID;
+      svgDoc.querySelectorAll("path").forEach((path) => {
+        path.style.stroke = '#126080';
+      });
+    })
+  }
+  </script>
 </html>
