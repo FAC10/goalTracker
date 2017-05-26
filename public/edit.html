@@ -15,21 +15,27 @@
   <link rel="import" href="./paper-slider.html">
   <style is="custom-style">
     paper-slider {
-      width: 100%;
+      width: 95%;
+      margin: 0 auto;
     }
     paper-slider.blue {
-      --paper-slider-knob-color: var(--paper-light-blue-500);
-      --paper-slider-active-color: var(--paper-light-blue-500);
+      --paper-slider-knob-color: #253494;/*var(--paper-light-blue-500);*/
+      --paper-slider-active-color: #253494;/*var(--paper-light-blue-500);*/
+      --paper-slider-container-color: #1d91c0;
+      --paper-slider-knob-start-color: #1d91c0;
+      --paper-slider-knob-start-border-color: #1d91c0;
     }
   </style>
 </head>
 <body>
   <header class="goal-header">
     <div class="container">
-      <h1>Edit your goal</h1>
+      <h1>Create a CV</h1>
     </div>
   </header>
-  <input type="text" placeholder="What is your goal?" value=" Create a CV">
+  <fieldset id="goalField">
+    <input type="text" placeholder="What is your goal?" value=" Create a CV">
+  </fieldset>
   <fieldset id="dateField">
     <!-- <div class="dateContainer"> -->
       <label for="date">Slide to set deadline or input it here</label>
@@ -43,11 +49,32 @@
     <paper-slider class="blue" id="slider2" type="range" min="0" max="100" value="25" step="25"></paper-slider>
       <span id="frequency">&nbsp;</span>
   </fieldset>
-  <button class="add-goal" type="button" name="button">
-    <a href="./work.html">
-      <i class="material-icons">add</i>
-    </a>
-  </button>
+  <div id="button-array">
+    <button class="button" type="button" name="done-button">
+      <a href="./work.html">
+        <i class="material-icons">done</i>
+      </a>
+    </button>
+    <button class="button" type="button" name="delete-button">
+      <a href="#">
+        <i class="material-icons">delete</i>
+      </a>
+    </button>
+    <button class="button" type="button" name="complete-button">
+      <a href="#">
+        <i class="material-icons">thumb up</i>
+      </a>
+    </button>
+  </div>
 <script src="/assets/scripts/add.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
+<script>
+    var pattern = Trianglify({
+        width: window.innerWidth,
+        height: window.innerHeight,
+        x_colors: ["#ffffd9","#edf8b1","#c7e9b4","#7fcdbb","#41b6c4","#1d91c0","#225ea8","#253494","#081d58"]
+    });
+    document.body.appendChild(pattern.canvas());
+</script>
 </body>
 </html>
