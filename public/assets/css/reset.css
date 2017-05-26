@@ -53,6 +53,7 @@ i.material-icons.counter-logo {
 	top: 0.4rem;
 	right: 0.4rem;
 	font-size: 10rem;
+	z-index: 3;
 }
 .counter {
 	color: #fafafa;
@@ -60,4 +61,5 @@ i.material-icons.counter-logo {
   top: 4.2rem;
   right: 4.2rem;
   font-size: 20px;
+	z-index: 3;
 }
