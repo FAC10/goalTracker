@@ -13,16 +13,15 @@ Goals are divided into four categories to encourage a healthy consideration for 
 * Leisure
 
 
-Inspiration from other similar apps:
+**Inspiration**:
 Functionality:
 * [Evernote](https://evernote.com)
 * [Duolingo](https://www.duolingo.com) (Language learning) 
 * [Couch 2 5K](www.c25kfree.com/) (Running/exercise)
 * [Google Calendar](https://www.google.com/calendar) (organization/planning/remainders).
+* [http://www.stridesapp.com/](http://www.stridesapp.com/)
 
-It will point and/or link the user to these apps should they need more control on a specific task, but its main aim is to keep all the planning/goals in one place and being easy to follow and work towards.
-
-Technology:
+**Technology**:
 Hapi.js
 Handlebars
 PostgreSQL
@@ -34,4 +33,3 @@ oAuth
 
 **Resources**
 - [https://elements.heroku.com/addons/sendgrid](https://elements.heroku.com/addons/sendgrid)
-- [http://www.stridesapp.com/](http://www.stridesapp.com/)
