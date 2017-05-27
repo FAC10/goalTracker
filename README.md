@@ -1,7 +1,11 @@
 # goalTracker
-[Prototype](https://goaltrackerapp.herokuapp.com/)
+
 ### Goal Tracker
 Goal Tracker is an mobile-designed web app for keeping track of your goals and deadlines. With a focus on using positive reinforcement to promote productivity and a balanced lifestyle, Goal Tracker can be used by anyone, but is aimed particularly at young people who live with depression or low self esteem. Users can also opt to receive email reminders of upcoming target deadlines, to help keep track of their priorities.
+
+[This video demonstration](https://dl.dropboxusercontent.com/u/5038771/GoalTracker%20Demo.mov) demonstrates how the app works.
+
+You can also check the [prototype we built](https://goaltrackerapp.herokuapp.com/) to see for yourself.
 
 Sample email reminder:
 
